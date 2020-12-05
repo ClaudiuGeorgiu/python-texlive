@@ -5,10 +5,12 @@
 [![Docker Hub](https://img.shields.io/docker/cloud/build/claudiugeorgiu/python-texlive)](https://hub.docker.com/r/claudiugeorgiu/python-texlive)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ClaudiuGeorgiu/python-texlive/blob/master/LICENSE)
 
-This repository is used to build a Docker image with TeX Live on top of `Python 3`.
+This repository is used to build a Docker image with TeX Live on top of `Python 3`. The
+final image can be used in a Docker container with the following command:
 
 ```Shell
-docker run --rm -u $(id -u):$(id -g) -it -v "${PWD}":"/workdir" claudiugeorgiu/python-texlive <tex-command>
+$ # Also add -u $(id -u):$(id -g) to avoid file permission issues.
+$ docker run --rm -it -v "${PWD}":"/workdir" claudiugeorgiu/python-texlive <tex-command>
 ```
 
 
