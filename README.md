@@ -10,7 +10,7 @@ final image can be used in a Docker container with the following command:
 
 ```Shell
 $ # Also add -u $(id -u):$(id -g) to avoid file permission issues.
-$ docker run --rm -it -v "${PWD}":"/workdir" claudiugeorgiu/python-texlive <tex-command>
+$ docker run --rm -it -v "${PWD}:/workdir" claudiugeorgiu/python-texlive <tex-command>
 ```
 
 
