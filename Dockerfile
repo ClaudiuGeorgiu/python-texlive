@@ -1,4 +1,4 @@
-FROM python:3.8.6-slim-buster
+FROM python:3.10.7-slim-bullseye
 
 # Install the needed tools.
 RUN apt update && apt install --no-install-recommends -y wget perl-tk && \
@@ -14,7 +14,7 @@ RUN wget -qO- http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
     cd .. && rm -rf install-tl
 
 # Make TeX Live tools available on path.
-ENV PATH="${PATH}:/usr/local/texlive/2020/bin/x86_64-linux"
+ENV PATH="${PATH}:/usr/local/texlive/2022/bin/x86_64-linux"
 
 # Set the working directory (to be used when mounting files from the host).
 WORKDIR /workdir
