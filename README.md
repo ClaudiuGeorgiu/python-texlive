@@ -5,8 +5,10 @@
 [![Actions Status](https://github.com/ClaudiuGeorgiu/RiskInDroid/workflows/Build/badge.svg?branch=master)](https://github.com/ClaudiuGeorgiu/python-texlive/actions?query=workflow%3ADocker)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ClaudiuGeorgiu/python-texlive/blob/master/LICENSE)
 
-This repository is used to build a Docker image with TeX Live on top of `Python 3`. The
-final image can be used in a Docker container with the following command:
+This repository is used to build a
+[Docker image](https://hub.docker.com/r/claudiugeorgiu/python-texlive) with TeX Live on
+top of `Python 3`. The final image can be used in a Docker container with the following
+command:
 
 ```Shell
 $ # Also add -u $(id -u):$(id -g) to avoid file permission issues.
