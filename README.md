@@ -2,7 +2,7 @@
 
 > Full TeX Live Docker image with Python support.
 
-[![Actions Status](https://github.com/ClaudiuGeorgiu/RiskInDroid/workflows/Build/badge.svg?branch=master)](https://github.com/ClaudiuGeorgiu/python-texlive/actions?query=workflow%3ADocker)
+[![Docker](https://github.com/ClaudiuGeorgiu/python-texlive/actions/workflows/docker.yml/badge.svg)](https://github.com/ClaudiuGeorgiu/python-texlive/actions/workflows/docker.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ClaudiuGeorgiu/python-texlive/blob/master/LICENSE)
 
 This repository is used to build a
