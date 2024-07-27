@@ -30,8 +30,17 @@ jobs:
             type=ref,event=tag
 
       - name: Build and push
+        id: push
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
+          sbom: true
           tags: ${{ steps.meta.outputs.tags }}
+
+      - name: Generate Docker image attestation
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-name: index.docker.io/claudiugeorgiu/minicap
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
